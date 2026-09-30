@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Justin Boisvert personal portfolio" />
+  <title>Justin Boisvert | Portfolio</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #182230;
+      --muted: #667085;
+      --accent: #1f4fd1;
+      --dark: #111827;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #111827, #233a68);
+      color: white;
+      padding: 72px 20px 58px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 10px; font-size: 2.8rem; }
+    header p { max-width: 780px; margin: 0 auto; font-size: 1.1rem; color: #e5e7eb; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(17, 24, 39, 0.96);
+      text-align: center;
+      padding: 13px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 700;
+    }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 980px; margin: 34px auto; padding: 0 18px 40px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.05);
+    }
+    h2 { margin-top: 0; font-size: 1.7rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill {
+      background: #eef3ff;
+      color: #173a96;
+      padding: 9px 13px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid #d7e2ff;
+    }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .project {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      background: #fbfcfe;
+    }
+    .project h3 { margin-top: 0; margin-bottom: 8px; }
+    .project p { color: var(--muted); }
+    .project a {
+      display: inline-block;
+      margin-top: 5px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .project a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 20px 32px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.15rem; }
+      nav a { margin: 0 8px; font-size: .95rem; }
+      section { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Justin Boisvert</h1>
+    <p>Business student with experience in insurance, reinsurance, and financial services, focused on building strong analytical, communication, and problem-solving skills.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>Personal Statement</h2>
+      <p>Business student with experience in insurance, reinsurance, and financial services, focused on building strong analytical, communication, and problem-solving skills.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Financial Analysis</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">PowerPoint</span>
+        <span class="skill">Financial Markets</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Presentation Skills</span>
+        <span class="skill">Team Collaboration</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Chubb Financial Analysis</h3>
+          <p>Analyzed Chubb Limited's business segments, financial performance, reinsurance operations, and earnings results, then organized the findings into a professional presentation.</p>
+        </article>
+
+        <article class="project">
+          <h3>Phone Addiction Presentation</h3>
+          <p>Developed and delivered a 15-minute research-based presentation examining smartphone use, social media habits, and the factors that contribute to phone addiction.</p>
+        </article>
+
+        <article class="project">
+          <h3>SQL Database Project</h3>
+          <p>Created and queried relational databases using SQL to organize, retrieve, and analyze structured data while practicing core database concepts.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Justin Boisvert</footer>
+</body>
+</html>
